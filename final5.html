@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min width to 300px */
+            gap: 20px; /* Increased gap between images */
+            padding: 20px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05); /* Adds zoom effect on hover */
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 600px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set smaller images for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Silly Moments!!</h1>
+    <div class="gallery-container">
+        <a href="https://ibb.co/zXGLsC0" target="_blank">
+        <img src="https://i.ibb.co/tq8NBnW/silly3.jpg" alt="SM" width="300">
+        </a>
+
+        <a href="https://ibb.co/8rVTrFT" target="_blank">
+        <img src="https://i.ibb.co/48x98B9/silly7.jpg" alt="SM" width="300">
+        </a>
+
+        <a href="https://ibb.co/7z5yYm4" target="_blank">
+        <img src="https://i.ibb.co/KGky0vw/silly6.jpg" alt="SM" width="300">
+        </a>
+
+        <a href="https://ibb.co/PT83bMH" target="_blank">
+        <img src="https://i.ibb.co/N1zQkrB/silly4.jpg" alt="SM" width="300">
+        </a>
+
+        <a href="https://ibb.co/F47jntx" target="_blank">
+        <img src="https://i.ibb.co/gZgB6Cj/silly2.jpg" alt="SM" width="300">
+        </a>
+
+        <a href="https://ibb.co/n7WVYPm" target="_blank">
+        <img src="https://i.ibb.co/dPh3VmM/silly1.jpg" alt="SM" width="300">
+        </a>
+        <a href="https://ibb.co/CMVSM2L" target="_blank">
+        <img src="https://i.ibb.co/ZYcbYm9/silly8.jpg" alt="SM" width="300">
+        </a>           
+    </div>
+</body>
+</html>

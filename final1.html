@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min width to 300px */
+            gap: 20px; /* Increased gap between images */
+            padding: 20px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05); /* Adds zoom effect on hover */
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 600px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set smaller images for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>First Month Part 1</h1>
+    <div class="gallery-container">
+        <a href="https://ibb.co/9N7Gyps" target="_blank">
+        <img src="https://i.ibb.co/Qf4XYJr/image1.jpg" alt="FMP1" width="300">
+        </a>
+        <a href="https://ibb.co/6mmZpsj" target="_blank">
+        <img src="https://i.ibb.co/pxxPsXY/image2.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/2ZJGdFx" target="_blank">
+        <img src="https://i.ibb.co/sW78qgn/image3.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/6BrykfK" target="_blank">
+        <img src="https://i.ibb.co/fvqXsP3/image4.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/8dvVg47" target="_blank">
+        <img src="https://i.ibb.co/MGwLk5C/image5.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/5MTQd1Z" target="_blank">
+        <img src="https://i.ibb.co/tmB0SHR/image6.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/YpzP2nk" target="_blank">
+        <img src="https://i.ibb.co/r4CFk86/image7.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/Zm0rnC5" target="_blank">
+        <img src="https://i.ibb.co/wsfq91V/image8.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/smqgsdS" target="_blank">
+        <img src="https://i.ibb.co/JBHcrwL/image9.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/0VzP9yr" target="_blank">
+        <img src="https://i.ibb.co/h1TpdFV/image10.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/XSxTGcP" target="_blank">
+        <img src="https://i.ibb.co/J5jPSDT/image11.jpg" alt="FMP1" width="300">
+        </a>
+
+        <a href="https://ibb.co/9ywLhGV" target="_blank">
+        <img src="https://i.ibb.co/mhvw0SX/image12.jpg" alt="FMP1" width="300">
+        </a>        
+    </div>
+</body>
+</html>

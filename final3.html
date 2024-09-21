@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min width to 300px */
+            gap: 20px; /* Increased gap between images */
+            padding: 20px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05); /* Adds zoom effect on hover */
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 600px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set smaller images for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Anniversary Moments</h1>
+    <div class="gallery-container">
+        <a href="https://ibb.co/ncfBswF" target="_blank">
+        <img src="https://i.ibb.co/bBLFg6k/august2.jpg" alt="AM" width="300">
+        </a>
+        <a href="https://ibb.co/SBX8264" target="_blank">
+        <img src="https://i.ibb.co/Zx6P3fp/august1.jpg" alt="AM" width="300">
+        </a>
+        <a href="https://ibb.co/xCm18PZ" target="_blank">
+        <img src="https://i.ibb.co/ZLHB1t9/april.jpg" alt="AM" width="300">
+        </a>
+        <a href="https://ibb.co/0F1BQ3B" target="_blank">
+        <img src="https://i.ibb.co/RBth7Wh/june.jpg" alt="AM" width="300">
+        </a>
+        <a href="https://ibb.co/gRDF5Sg" target="_blank">
+        <img src="https://i.ibb.co/mcHFL9z/july.jpg" alt="AM" width="300">
+        </a>
+           </div>
+</body>
+</html>

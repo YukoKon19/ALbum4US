@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased min width to 300px */
+            gap: 20px; /* Increased gap between images */
+            padding: 20px;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.05); /* Adds zoom effect on hover */
+        }
+
+        /* Responsive for small screens */
+        @media (max-width: 600px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set smaller images for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>First Month Part 2</h1>
+    <div class="gallery-container">
+        <a href="https://ibb.co/W6snwDK" target="_blank">
+        <img src="https://i.ibb.co/37k1qfh/image27.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/Lxxn0CD" target="_blank">
+        <img src="https://i.ibb.co/GWWcdVf/image26.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/5YMJWcm" target="_blank">
+        <img src="https://i.ibb.co/KN08jyd/image25.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/b13J27p" target="_blank">
+        <img src="https://i.ibb.co/qBn5Wxb/image24.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/gdbPzDM" target="_blank">
+        <img src="https://i.ibb.co/pQ6RJ3v/image23.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/ZHFQXw1" target="_blank">
+        <img src="https://i.ibb.co/8zfysR4/image22.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/g91TNvw" target="_blank">
+        <img src="https://i.ibb.co/r0P6YbM/image21.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/h9P171r" target="_blank">
+        <img src="https://i.ibb.co/pwtr0rN/image20.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/kqbP4Yq" target="_blank">
+        <img src="https://i.ibb.co/zP9tXKP/image19.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/ykqCJZZ" target="_blank">
+        <img src="https://i.ibb.co/my4K722/image18.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/kDzMn9F" target="_blank">
+        <img src="https://i.ibb.co/n14R2nS/image17.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/gFWq8gC" target="_blank">
+        <img src="https://i.ibb.co/YTdnSjG/image16.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/7XRL5wQ" target="_blank">
+        <img src="https://i.ibb.co/yXY71wp/image15.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/hg46MdW" target="_blank">
+        <img src="https://i.ibb.co/nwYG01c/image14.jpg" alt="FMP2" width="300">
+        </a>
+        <a href="https://ibb.co/YhhDRdS" target="_blank">
+        <img src="https://i.ibb.co/WffDxzX/image13.jpg" alt="FMP2" width="300">
+        </a>
+    </div>
+</body>
+</html>
